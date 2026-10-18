@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Kamalakannan A – Research Portfolio</title>
+<style>
+:root{--bg:#faf8f4;--card:#fff;--ink:#1f2430;--mute:#5d6575;--accent:#0f6b5c;--line:#e4dfd5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181f;--card:#1c222c;--ink:#e8eaee;--mute:#9aa3b2;--accent:#4fd1b5;--line:#2c3441;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14181f;--card:#1c222c;--ink:#e8eaee;--mute:#9aa3b2;--accent:#4fd1b5;--line:#2c3441;color-scheme:dark}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,'Times New Roman',serif}
+h1,h2,h3,nav,.chip,button{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+a{color:var(--accent)}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:18px;align-items:center;padding:12px 20px;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;color:var(--mute);font-size:14px}
+nav a:hover{color:var(--accent)}
+nav b{color:var(--ink);margin-right:auto}
+nav button{background:none;border:1px solid var(--line);color:var(--ink);border-radius:20px;padding:4px 10px;cursor:pointer}
+main{max-width:880px;margin:0 auto;padding:0 20px 60px}
+section{padding:44px 0 8px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:0 0 8px}
+h2{font-size:22px;border-bottom:2px solid var(--accent);display:inline-block;padding-bottom:4px;margin:0 0 18px}
+.hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap;padding-top:48px}
+.avatar{width:130px;height:130px;border-radius:50%;background:var(--accent);color:var(--bg);display:grid;place-items:center;font:700 42px system-ui}
+.role{color:var(--mute);margin:0 0 14px}
+.btn{display:inline-block;padding:9px 18px;border-radius:8px;background:var(--accent);color:var(--bg);text-decoration:none;font:600 14px system-ui;margin:0 8px 8px 0}
+.btn.alt{background:none;border:1px solid var(--accent);color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:5px 13px;font-size:13px;cursor:pointer}
+.chip.on{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.pub{padding:14px 0;border-bottom:1px solid var(--line)}
+.pub .t{font-weight:700}
+.pub .m{color:var(--mute);font-size:14px}
+.tag{font:600 11px system-ui;text-transform:uppercase;letter-spacing:.05em;color:var(--accent)}
+.tl{border-left:2px solid var(--line);padding-left:16px}
+.tl div{margin-bottom:14px}
+.tl small{color:var(--mute);font-family:system-ui}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:24px}.editing [contenteditable]{outline:1px dashed var(--accent);outline-offset:3px;border-radius:4px}.del,.addp,#bar{display:none}.editing .del{display:inline-block;margin-top:6px;background:none;border:1px solid var(--line);color:var(--mute);border-radius:6px;font:12px system-ui;padding:2px 8px;cursor:pointer}.editing .addp{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin:14px 0}input,textarea{padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:14px system-ui;width:100%}.cform{display:grid;gap:8px;max-width:480px;margin-top:14px}#bar{position:fixed;left:0;right:0;bottom:0;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--line);z-index:6;font:13px system-ui}.editing #bar{display:flex}#codeBox{position:fixed;inset:0;z-index:9;background:rgba(0,0,0,.65);display:flex;flex-direction:column;gap:8px;padding:16px}#codeBox[hidden]{display:none}#codeBox textarea{flex:1;font:12px monospace}
+</style>
+</head>
+<body>
+<nav>
+  <b>Dr. Kamalakannan A</b>
+  <a href="#about">About</a><a href="#research">Research</a><a href="#pubs">Publications</a><a href='#projects'>Awards</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+  <button id='editBtn' aria-label='Edit page'>✏️ Edit</button><button id="theme" aria-label="Toggle theme">◐</button>
+</nav>
+<main>
+  <section class="hero" id="top">
+    <div class="avatar">KK</div>
+    <div>
+      <h1>Dr. Kamalakannan A</h1>
+      <p class='role'>Assistant Professor (MBA) · S.A. Engineering College (Autonomous), Chennai<br>MBA · M.Phil. · Ph.D. (Business Administration)</p>
+      <a class="btn" href="#pubs">View publications</a><a class='btn alt' href='mailto:kamalakannan1094@gmail.com'>Email me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am an Assistant Professor in the MBA programme at S.A. Engineering College, Chennai. I completed my Ph.D. in Business Administration at the University of Madras (Department of Adult and Continuing Education) and have taught management since 2023, after an HR traineeship in the automobile industry. My research looks at human resource management, employee motivation and work efficiency, and the growing role of AI and digital transformation in HR, retail and higher education. I am the author of the book <i>The Human Output: Bridging Motivation, Morale, and the Generation Gaps</i> (2026), with 18 journal articles, book chapters and conference papers.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research interests</h2>
+    <div class="grid">
+      <div class="card"><h3>HRM &amp; employee motivation</h3><p>Work culture, motivation, absenteeism, work efficiency and workplace neurodiversity, with a focus on the automobile and IT sectors.</p></div>
+      <div class="card"><h3>AI in HR &amp; business</h3><p>AI in HR analytics and hiring, customer relationship management, and consumer behaviour in digital retailing.</p></div>
+      <div class="card"><h3>Digital transformation &amp; education</h3><p>ICT, AI and digital transformation in higher education and teaching performance, plus researcher challenges.</p></div>
+    </div>
+  </section>
+
+  <section id="pubs">
+    <h2>Publications</h2>
+    <div class="chips" id="chips"></div>
+    <div id="list"></div><div class='addp'><input id='pT' placeholder='Title'><input id='pV' placeholder='Journal / venue'><input id='pY' placeholder='Year' inputmode='numeric'><input id='pK' placeholder='Type (Journal, Conference…)'><input id='pL' placeholder='Link (https://…)'><button class='chip on' id='addPub'>+ Add publication</button></div>
+  </section>
+
+  <section id="projects">
+    <h2>Fellowships &amp; awards</h2>
+    <div class="grid">
+      <div class='card'><h3>Research fellowships</h3><p>University Research Fellow, 2019–2021<br>Teaching cum Research Fellow, 2021–2023<br>Department of Adult and Continuing Education, University of Madras</p></div>
+      <div class='card'><h3>Awards &amp; recognition</h3><p>Outstanding Authorship Award (2025–26)<br>Academic Publication Excellence (2024–25)<br>Distinguished Research Award (2024–25), Mar Gregorios College<br>2nd position, 1st Doctoral Colloquium, Gujarat University (2021)[cite: 1]</p></div>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching &amp; experience</h2>
+    <div class="tl">
+      <div><small>2026 – present</small><br><b>Assistant Professor (MBA)</b>, S.A. Engineering College (Autonomous), Chennai[cite: 1]</div>
+      <div><small>2024 – 2026</small><br><b>Assistant Professor (BBA)</b>, Mar Gregorios College of Arts and Science, Chennai · Coordinator, R&amp;D Cell (from Jan 2026)[cite: 1]</div>
+      <div><small>2023</small><br><b>Assistant Professor (BBA)</b>, DRBCCC Hindu College, Pattabiram, Chennai[cite: 1]</div>
+      <div><small>2019 – 2023</small><br><b>Research Fellow (URF, then TRF)</b>, University of Madras[cite: 1]</div>
+      <div><small>2018</small><br><b>HR Trainee</b>, Seoyon E-Hwa Automotive Chennai Pvt Ltd[cite: 1]</div>
+      <div><small>Education</small><br>Ph.D. Business Administration, University of Madras (2023) · M.Sc. Psychology, University of Madras (2022) · M.Phil. HRM, University of Madras (2018) · MBA (HR &amp; Marketing), 2016 · BBA, 2014[cite: 1]</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href='mailto:kamalakannan1094@gmail.com'>kamalakannan1094@gmail.com</a> · <a href='https://mail.google.com/mail/?view=cm&amp;to=kamalakannan1094@gmail.com' target='_blank' rel='noopener'>Open in Gmail[cite: 1]</a><br>
+    <a href='https://www.linkedin.com/in/dr-kamalakannan-a-b91303159/' target='_blank' rel='noopener'>LinkedIn</a> · <a href='https://scholar.google.com/citations?user=JEiEVDcAAAAJ&amp;hl=en' target='_blank' rel='noopener'>Google Scholar[cite: 1]</a> · <a href='https://orcid.org/0009-0008-2173-3808' target='_blank' rel='noopener'>ORCID[cite: 1]</a> · <a href='https://www.researchgate.net/profile/Kamalakannan-a-2/research' target='_blank' rel='noopener'>ResearchGate[cite: 1]</a> · <a href='https://www.webofscience.com/wos/author/record/PJC-2290-2026' target='_blank' rel='noopener'>Web of Science[cite: 1]</a> · <a href='https://vidwan.inflibnet.ac.in/profile/624386' target='_blank' rel='noopener'>Vidwan[cite: 1]</a></p>
+    <div class='cform'><input id='cN' placeholder='Your name'><textarea id='cM' placeholder='Your message' rows='4'></textarea><a class='btn' id='send' href='mailto:kamalakannan1094@gmail.com'>Send email</a></div>
+  </section>
+</main>
+<footer>© <span id="yr"></span> Dr. Kamalakannan A. Built with plain HTML, CSS and JavaScript[cite: 1].</footer>
+<div id='bar'><span>Edit mode: click any text to change it.</span><button class='chip' id='codeBtn'>Get page code</button><button class='chip' id='resetBtn'>Reset edits</button></div>
+<div id='codeBox' hidden><b style='color:#fff'>Copy all of this code and save it as index.html.</b><textarea id='codeTxt' readonly></textarea><div style='display:flex;gap:8px'><button class='chip on' id='copyBtn'>Copy</button><button class='chip' id='closeBtn'>Close</button></div></div>
+
+<script>
+let pubs = [
+  {year:2026,type:'Book',title:'The Human Output: Bridging Motivation, Morale, and the Generation Gaps',venue:'Pencil bitz Publications, ISBN 978-81-69495-67-7',link:'#'},
+  {year:2026,type:'Book chapter',title:'AI in Digital Retailing: Consumer Buying Behavior and Experience',venue:'AI and IoT: Concepts, Technologies and Applications, Ch. 8, Innovation Online Training Academy',link:'#'},
+  {year:2025,type:'Book chapter',title:'How to Address the Patience and Strategies to Overcome Intrusive Thoughts',venue:'AI and Contemporary Research Dimensions in Social Work Practice, Ch. 9, Beyond Line Publisher',link:'https://play.google.com/books/reader?id=1CTHEQAAQBAJ&pg=GBS.PP2&hl=en_GB'},
+  {year:2025,type:'Book chapter',title:'Eco-friendly Industrial Practices: Policy, Innovation, and CSR in India (with B. Kalaiyarasan)',venue:'Emerging Technologies in Energy, Environment and Sustainable Materials, Ch. 21, Jyotikiran Publication',link:'https://jkpub.in/wp-content/uploads/2026/01/21.pdf'},
+  {year:2020,type:'Book chapter',title:'Industrial Revolution 4.0 – A Conceptual View (with V.P. Matheswaran)',venue:'Skill Enhancement for Human Resource Development, EM KE VI Publication',link:'#'},
+  {year:2026,type:'Conference',title:'Talent Transformation: How Academia and Industry Shape Employability',venue:'International Conference proceedings, Quing Publications, Vol. I(II), 117–124',link:'#'},
+  {year:2026,type:'Conference',title:'Customer Relationship Management in the Digital Era: Customer Knowledge through AI',venue:'National Conference proceedings, Mayas Publication, Vol. II(I), 7–13',link:'https://doi.org/10.35337/mayas.2026.v22'},
+  {year:2025,type:'Journal',title:'The Role of AI in HR Analytics and How It Affects Digitalization of Hiring',venue:'International Journal of Science, Engineering and Technology, 13(2)',link:'https://www.ijset.in/wp-content/uploads/IJSET_V13_issue2_470.pdf'},
+  {year:2025,type:'Journal',title:'Motivational Factors towards Employee Work Efficiency: NFK Automobile Industry, Chennai – An Empirical Study',venue:'Int. J. for Research Trends in Social Science & Humanities, 3(2), 607–613',link:'https://ijrtssh.com/wp-content/uploads/2025/04/ijrtssh.vol_.3.issue2_.132.pdf'},
+  {year:2025,type:'Journal',title:'Role of Artificial Intelligence in Human Resource Management: Effects and Future (with M. Priyanghaa)',venue:'IPE Journal of Management, 15(08), 76–79',link:'#'},
+  {year:2024,type:'Journal',title:'Customer Opinion towards Banking Service in Chennai Branch – An Empirical Study',venue:'Madhya Bharti, 85(3)',link:'#'},
+  {year:2024,type:'Journal',title:'The Role of Digital Transformation in Education and Teaching Performance – A Conceptual View',venue:'International Journal of Business and Management Invention, 13(4), 142–145',link:'https://www.ijbmi.org/papers/Vol(13)4/1304142145.pdf'},
+  {year:2024,type:'Journal',title:'Challenges Faced by Researcher – A Hypothetical View',venue:'Indian Journal of Psychology, 3.1, 163–167',link:'#'},
+  {year:2024,type:'Journal',title:'Internet Addiction among Children and Adolescents in India – A Hypothetical View',venue:'Journal of Management and Entrepreneurship, 18.1(II), 43–46',link:'#'},
+  {year:2024,type:'Journal',title:'The Integration of Digital Transformation with Human Resource Management – A Theoretical Point of View',venue:'IJSREM, 8(2), 501–504',link:'https://doi.org/10.55041/IJSREM28895'},
+  {year:2024,type:'Journal',title:'Information and Communication Technologies (ICT) in Education – A Theoretical Point of View',venue:'IJPREMS, 4(2)',link:'#'},
+  {year:2024,type:'Journal',title:'A Theoretical Perspective on Modern Human Resource Management Research in Healthcare Contexts – India',venue:'Juni Khyat, 14(2), 84–89',link:'#'},
+  {year:2023,type:'Journal',title:'A Theoretical Perspective on Workplace Neurodiversity: Opportunities and Challenges for HR Management',venue:'Bharatiya Shiksha Shodh Patrika, 42(2), 79–84',link:'#'},
+  {year:2023,type:'Journal',title:'Influence of Work Culture on Employee Working Style with special reference to IT sectors in Chennai City',venue:'Journal of Indian Research, 11, 1–4',link:'https://jir.mewaruniversity.org/wpcontent/uploads/2024/08/ch-8-Dr.-A.-Kamalakannan.pdf'},
+  {year:2022,type:'Journal',title:'A Study on Employee’s Attitude towards Job Performance During Covid-19 Pandemic: Automobile Industry in Chennai (with V.P. Matheswaran)',venue:'Madhya Bharti, 82(1), 22–32',link:'#'},
+  {year:2022,type:'Journal',title:'Effectiveness of Online Learning During Covid-19 among Arts and Science College Students in Chennai City (with K. Nithya, V.P. Matheswaran)',venue:'Rabindra Bharati Journal of Philosophy, XXII(8), 15–24',link:'#'},
+  {year:2022,type:'Journal',title:'Impact of Employee Work Efficiency Due to Covid-19 on Automobile Industry Employees in Chennai – A Theoretical View',venue:'Journal of Caraivét, V(2), 63–70',link:'http://www.caraiveti.com/Uploads/UserFileUpload/FU_806453.pdf'},
+  {year:2022,type:'Journal',title:'Motivation of Employee and their Working Style in Automobile Industries in Chennai – A Conceptual View',venue:'Rabindra Bharati Journal of Philosophy, XXIII(1), 154–160',link:'#'},
+  {year:2020,type:'Journal',title:'Employee Absenteeism with Special Reference to Automobile Industry – A Theoretical Study',venue:'IJIRMF, 6(1)',link:'https://www.ijirmf.com/wp-content/uploads/IJIRMF202001001.pdf'},
+  {year:2020,type:'Journal',title:'Impact on Employees due to Covid-19 Pandemic in Automobile Industries, Chennai District – A Bird’s View',venue:'Journal of Interdisciplinary Cycle Research, XII(X), 1704–1710',link:'http://www.jicrjournal.com/gallery/190-jicr-october-3411.pdf'}
+];
+const EDS='main h1,main h2,main h3,main p,main .role,main .tl div,footer';
+function saveP(){try{localStorage.setItem('kp',JSON.stringify(pubs))}catch(e){}}
+try{const kp=localStorage.getItem('kp');if(kp)pubs=JSON.parse(kp);const ke=JSON.parse(localStorage.getItem('ke')||'null');if(ke)document.querySelectorAll(EDS).forEach((el,i)=>{if(ke[i]!=null)el.innerHTML=ke[i]})}catch(e){}
+const chips=document.getElementById('chips'),list=document.getElementById('list');
+let types=[];
+let cur='All';
+function render(){
+  types=['All',...new Set(pubs.map(p=>p.type))];if(!types.includes(cur))cur='All';chips.innerHTML='';
+  types.forEach(t=>{const b=document.createElement('button');b.className='chip'+(t===cur?' on':'');b.textContent=t;b.onclick=()=>{cur=t;render()};chips.appendChild(b)});
+  list.innerHTML='';
+  pubs.filter(p=>cur==='All'||p.type===cur).sort((a,b)=>b.year-a.year).forEach(p=>{
+    const d=document.createElement('div');d.className='pub';
+    d.innerHTML='<span class="tag"></span><div class="t"></div><div class="m"></div>';
+    d.querySelector('.tag').textContent=p.type+' · '+p.year;
+    const t=d.querySelector('.t'),a=document.createElement('a');a.href=/^(https?:|mailto:|#)/.test(p.link)?p.link:'#';a.textContent=p.title;t.appendChild(a);
+    d.querySelector('.m').textContent=p.venue;const x=document.createElement('button');x.className='del';x.textContent='✕ Remove';x.onclick=()=>{pubs.splice(pubs.indexOf(p),1);saveP();render()};d.appendChild(x);
+    list.appendChild(d);
+  });
+}
+render();
+document.getElementById('yr').textContent=new Date().getFullYear();
+const $=id=>document.getElementById(id),eb=$('editBtn');let ed=false;
+function setEd(on){ed=on;document.body.classList.toggle('editing',on);document.querySelectorAll(EDS).forEach(el=>on?el.setAttribute('contenteditable','true'):el.removeAttribute('contenteditable'));eb.textContent=on?'✔ Done':'✏️ Edit';if(!on){try{localStorage.setItem('ke',JSON.stringify([...document.querySelectorAll(EDS)].map(e=>e.innerHTML)))}catch(e){}}}
+eb.onclick=()=>setEd(!ed);
+$('addPub').onclick=()=>{const g=i=>$(i).value.trim();if(!g('pT'))return;pubs.push({year:+g('pY')||new Date().getFullYear(),type:g('pK')||'Journal',title:g('pT'),venue:g('pV'),link:g('pL')||'#'});['pT','pV','pY','pL'].forEach(i=>$(i).value='');saveP();render()};
+$('resetBtn').onclick=()=>{try{localStorage.removeItem('ke');localStorage.removeItem('kp')}catch(e){}location.reload()};
+function getCode(){const c=document.documentElement.cloneNode(true);c.removeAttribute('data-theme');c.querySelector('body').classList.remove('editing');c.querySelectorAll('[contenteditable]').forEach(e=>e.removeAttribute('contenteditable'));c.querySelector('#chips').innerHTML='';c.querySelector('#list').innerHTML='';c.querySelector('#codeBox').hidden=true;c.querySelector('#editBtn').textContent='✏️ Edit';[...c.querySelectorAll('script')].forEach(s=>{const t=s.textContent,a=t.indexOf('let pubs = [');if(a>-1){const e=t.indexOf('];',a)+2;s.textContent=t.slice(0,a)+'let pubs = '+JSON.stringify(pubs,null,1)+';'+t.slice(e)}});return '<!DOCTYPE html>'+c.outerHTML}
+$('codeBtn').onclick=()=>{$('codeTxt').value=getCode();$('codeBox').hidden=false;$('codeTxt').select()};
+$('closeBtn').onclick=()=>{$('codeBox').hidden=true};
+$('copyBtn').onclick=async()=>{const t=$('codeTxt');t.select();try{await navigator.clipboard.writeText(t.value)}catch(e){document.execCommand('copy')}};
+$('send').onclick=e=>{e.currentTarget.href='mailto:kamalakannan1094@gmail.com?subject='+encodeURIComponent('Message from '+($('cN').value||'website visitor'))+'&body='+encodeURIComponent($('cM').value)};
+document.getElementById('theme').onclick=()=>{
+  const r=document.documentElement,dark=getComputedStyle(r).colorScheme==='dark';
+  r.setAttribute('data-theme',dark?'light':'dark');
+};
+</script>
+</body>
+</html>
